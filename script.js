@@ -21,7 +21,7 @@ function fetchMovies(url, element_selector, path_type ){
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error("something went wrong");
+            throw new Error("Ocurrio un error");
         }
     })
     .then((data)=>{
